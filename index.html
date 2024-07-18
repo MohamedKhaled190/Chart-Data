@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Jquery</title>
+  <style>
+    thead {
+        background-color: #007bff; /* Change this to your desired background color */
+        color: white; /* Change this to your desired text color */
+    }
+</style>
+</head>
+<body>
+  <!-- Srart Search Bar -->
+  <main>
+    <div class="container py-5">
+      <div class="search-box">
+        <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
+        <form action="" class="search-form">
+          <input type="text" placeholder="Search" id="search" autocomplete="off">
+        </form>
+        <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;"
+         xml:space="preserve">
+            <path class="border" d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280"/>
+            <path class="border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280"/>
+          </svg>
+        <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
+      </div>
+  
+    </div>
+  </main>
+  <!-- end Search Bar -->
+  <!-- Start Table  -->
+  <div class="container">
+    <table class="w-100 table table-striped table-bordered">
+      <thead class="">
+       <tr>
+         <th class="text-center align-middle">Name</th>
+         <th class="text-center align-middle">Total Transaction Amount</th>
+         <th class="text-center align-middle">Transactions per day</th>
+       </tr>
+      </thead>
+      <tbody id="ShowData">
+  
+
+      </tbody>
+     </table>
+     <canvas id="myChart" class="px-5 mx-5"></canvas>
+  <div class="d-flex flex-column align-items-center">
+    <img src="https://job-fair-task.vercel.app/assets/images/no-data.PNG"    id="noResultimg" alt="">
+    <h2 id="noResulth2" class="">No result</h2>
+  </div>
+  </div>
+  <!-- End Table  -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./jquery-3.7.1.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
